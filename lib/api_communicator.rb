@@ -33,7 +33,15 @@ def get_character_movies_from_api(character_name)
 end
 
 def print_movies(films)
-  # some iteration magic and puts out the movies in a nice list
+  i = 1
+
+  films.each do |film|
+    puts "#{i} #{film["title"]}"
+    i = i + 1
+  end
+
+  pust "test"
+
 end
 
 def show_character_movies(character)
