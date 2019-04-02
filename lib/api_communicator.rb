@@ -39,6 +39,8 @@ def print_movies(films)
     #break
     puts "Title : #{each_hash.select{|key,data| key=="title"}.values.join(" ")}"
     puts "Director : #{each_hash.select{|key,data| key=="director"}.values.join(" ")}"
+    puts "Producer : #{each_hash.select{|key,data| key=="producer"}.values.join(" ")}"
+    puts puts "Release date : #{each_hash.select{|key,data| key=="release_date"}.values.join(" ")}"
     i = i+1
   end
 end
