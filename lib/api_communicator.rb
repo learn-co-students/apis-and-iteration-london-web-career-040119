@@ -38,6 +38,7 @@ def print_movies(films)
     each_hash.each do |key,film|
       if key=="title"
         print "found title"
+        break
       end
     end
   end
