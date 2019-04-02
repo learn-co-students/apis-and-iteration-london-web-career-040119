@@ -36,7 +36,7 @@ def print_movies(films)
   while i < films.length
     each_hash = films[i]
     each_hash.select(|value| if each_hash[key] == "title")
-    
+
 
   # some iteration magic and puts out the movies in a nice list
 
