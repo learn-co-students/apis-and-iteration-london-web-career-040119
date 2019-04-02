@@ -19,7 +19,7 @@ def get_character_movies_from_api(character_name)
     movies_array << hash
   end
 
-  movies-array
+  movies_array
 
   # iterate over the response hash to find the collection of `films` for the given
   #   `character`
@@ -33,7 +33,7 @@ def get_character_movies_from_api(character_name)
 end
 
 def print_movies(films)
-  
+
 end
 
 def show_character_movies(character)
