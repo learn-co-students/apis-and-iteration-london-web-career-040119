@@ -8,14 +8,19 @@ def get_character_movies_from_api(character_name)
   response_string = RestClient.get('http://www.swapi.co/api/people/')
   response_hash = JSON.parse(response_string)
 
-  response_hash["results"][0]["films"].each do |URL|
-    binding.pry
-    URL_string = RestClient.get(URL)
-    binding.pry
-    URL_hash = JSON.parse(URL_string)
+  character_movies = response_hash["results"][0]["films"]
+
+  movies_array = []
+
+  character_movies.each do |site|
+    site_string = RestClient.get(site)
+    site_hash = JSON.parse(site_string)
+    hash = {"title" => site_hash["title"]}
+    movies_array << hash
   end
 
-
+  binding.pry
+  movies_array
 
   # iterate over the response hash to find the collection of `films` for the given
   #   `character`
