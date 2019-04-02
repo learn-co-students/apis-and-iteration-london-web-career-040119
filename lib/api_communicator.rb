@@ -35,15 +35,8 @@ def print_movies(films)
   i = 0
   while i < films.length
     each_hash = films[i]
-    each_hash.each do |key,film|
-      if key=="title"
-        print "found title"
-        break
-      end
-    end
-  end
-
-end
+    each_hash.select(|value| if each_hash[key] == "title")
+    
 
   # some iteration magic and puts out the movies in a nice list
 
