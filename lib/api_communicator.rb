@@ -40,8 +40,6 @@ def print_movies(films)
     i = i + 1
   end
 
-  pust "test"
-
 end
 
 def show_character_movies(character)
