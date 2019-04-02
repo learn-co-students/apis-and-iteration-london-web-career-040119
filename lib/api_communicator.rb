@@ -48,8 +48,8 @@ def print_movies(films)
       if key == "release_date"
         puts "Release date : #{data}"
       end
-      puts "*" * 20
     end
+    puts "*"*20
     i = i+1
   end
 end
