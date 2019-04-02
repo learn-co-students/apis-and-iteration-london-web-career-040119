@@ -37,7 +37,7 @@ def print_movies(films)
     each_hash = films[i]
     #puts each_hash
     #break
-    puts each_hash.select{|key,data| key=="title"}
+    puts each_hash.select{|key,data| key=="title"}.values
     i = i+1
   end
 end
