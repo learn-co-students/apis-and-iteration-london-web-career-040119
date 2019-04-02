@@ -64,4 +64,6 @@ def welcome
 end
 
 def get_user_character
-  puts "Enter the name of a "
+  puts "Enter the name of a Star Wars character to view their film stats."
+  gets.chomp
+end
