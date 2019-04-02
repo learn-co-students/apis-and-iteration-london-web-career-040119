@@ -38,6 +38,7 @@ def print_movies(films)
     puts each_hash.select{|value| each_hash["title"]}
     i = i+1
   end
+end
 
 
   # some iteration magic and puts out the movies in a nice list
