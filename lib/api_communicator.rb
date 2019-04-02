@@ -38,7 +38,7 @@ def print_movies(films)
     each_hash.each do |key,data|
       if key=="title"
         print data
-        
+
       end
     end
     i = i+1
