@@ -50,4 +50,3 @@ def show_character_movies(character)
   films = get_character_movies_from_api(character)
   print_movies(films)
 end
-
