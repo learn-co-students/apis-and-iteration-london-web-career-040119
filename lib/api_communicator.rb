@@ -63,4 +63,5 @@ def welcome
   puts "Welcome!"
 end
 
-def
+def get_user_character
+  puts "Enter the name of a "
