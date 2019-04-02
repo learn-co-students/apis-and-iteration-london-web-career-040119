@@ -35,23 +35,7 @@ def print_movies(films)
   i = 0
   while i < films.length
     each_hash = films[i]
-    each.hash.select{|key| key=="Title"}
-    each_hash.each do |key,data|
-
-      if key=="title"
-        puts "Title : #{data}"
-      end
-      if key=="director"
-        puts "Director : #{data}"
-      end
-      if key=="producer"
-        puts "Producer : #{data}"
-      end
-      if key == "release_date"
-        puts "Release date : #{data}"
-      end
-    end
-    puts "*"*20
+    each.hash.select{|key| key=="title"}
     i = i+1
   end
 end
