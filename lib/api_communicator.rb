@@ -34,10 +34,12 @@ end
 
 def print_movies(films)
   i = 1
+
   films.each do |film|
    puts "#{i} #{film["title"]}"
    i = i + 1
  end
+ 
 end
 
 def show_character_movies(character)
