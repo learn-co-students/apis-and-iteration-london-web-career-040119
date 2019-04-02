@@ -48,4 +48,4 @@ def show_character_movies(character)
   print_movies(films)
 end
 
-show_character_movies("Luke Skywalker")
+
