@@ -19,7 +19,6 @@ def get_character_movies_from_api(character_name)
     movies_array << hash
   end
 
-  binding.pry
   movies_array
 
   # iterate over the response hash to find the collection of `films` for the given
